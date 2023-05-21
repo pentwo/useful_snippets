@@ -1,0 +1,40 @@
+{
+    "POST ENDPOINT": {
+        "prefix": "post",
+        "body": [
+            "import BaseAdapter from \"../BaseAdapter\"",
+            "",
+            "class ${1:$TM_FILENAME_BASE} extends BaseAdapter {",
+            "  ",
+            "    constructor() {",
+            "        super(\"/api/${1:routeHere}\", BaseAdapter.METHODS.POST, [])",
+            "    }",
+            "",
+            "    input() {",
+            "        this.data = {",
+            "            ",
+            "        }",
+            "    }",
+            "}",
+            "",
+            "export default ${1:$TM_FILENAME_BASE};"
+        ],
+        "description": "POST ENDPOINT"
+    },
+    "GET ENDPOINT": {
+        "prefix": "get",
+        "body": [
+            "import BaseAdapter from \"../BaseAdapter\"",
+            "",
+            "class ${1:$TM_FILENAME_BASE} extends BaseAdapter {",
+            "  ",
+            "    constructor() {",
+            "        super(\"/api/${1:routeHere}\", BaseAdapter.methods.GET, [])",
+            "    }",
+            "}",
+            "",
+            "export default ${1:$TM_FILENAME_BASE};"
+        ],
+        "description": "GET ENDPOINT"
+    }
+}
