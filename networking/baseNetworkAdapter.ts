@@ -28,7 +28,7 @@ export interface IPagination {
 // ==========================================
 
 abstract class BaseAdapter {
-    static BASE_URL = import.meta.env.VITE_API_URL || "http://school.numero.test";
+    static BASE_URL = import.meta.env.VITE_API_URL || "http://localhost";
 
     static METHODS = {
         GET: "GET",
